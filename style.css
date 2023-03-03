@@ -71,6 +71,8 @@ padding: 14px 0 14px 0;
 .nav-bar-ul{
   width: 1200px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .nav-bar-ul li {
@@ -85,12 +87,14 @@ padding: 14px 0 14px 0;
     background-size: cover;
     height: 650px;
     padding: 50px 0 0 0;
+    position: relative;
   }
 
-  .h2-aside-style{
-
+  .quote{
     font-size: 2.5em;
-
+    position: absolute;
+    left: 10%;
+    bottom: 100px;
   }
 
   .text{
@@ -101,12 +105,14 @@ padding: 14px 0 14px 0;
   }
 
   .link-btn{
-    background-color: #0C1E32;
+    background-color: #4399fc;
+    color: white;
     font-family: 'roboto condensed';    
     font-size: 2em;
     letter-spacing: 0.5px;
     text-align: center;
     text-decoration: none;
+    padding: 10px 30px 10px 30px;
   }
 
   .service-box{
@@ -125,33 +131,36 @@ padding: 14px 0 14px 0;
     width: 125px;
   }
 
-#team{
-  padding: 75px 0;
-  margin: 0 auto;
-}
-
-  #team .section-text{
-    font-size: 1.9em;
-    text-align: center;
-    width: 60%;
-    margin: 10px auto;
+  #team{
+    padding: 75px 0;
+    margin: 0 auto;
   }
-
-  #team .member-name{
-    font-size: 1.5em;
-    font-weight: 700;
-  }
-
-  #team img{
-    width: 250px;
-    height: 180px;
-  }
+  
+    #team .section-text{
+      font-size: 1.9em;
+      text-align: center;
+      width: 60%;
+      margin: 10px auto;
+    }
+  
+    #team .member-name{
+      font-size: 1.5em;
+      font-weight: 700;
+    }
+  
+    #team img{
+      width: 250px;
+      height: 180px;
+    }
 
   .footer{
     font-size: 1.9em;
     text-align: center;
     padding: 40px 100px 40px 100px;
     margin: 0 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .footer .address{
@@ -196,3 +205,39 @@ width: 40%;
     border: 1px solid black;
     padding: 5px 10px 5px 10px;
   }
+
+  #general-information{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #general-information .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+  }
+
+  #structure > div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+#team > div{
+display: felx;
+justify-content:space-evenly;
+}
+
+#team > div > article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-frame{
+  height: 375px;
+  width: 60%;
+}
