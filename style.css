@@ -226,7 +226,7 @@ width: 40%;
   }
 
 #team > div {
-display: felx;
+display: flex;
 justify-content:space-evenly;
 }
 
